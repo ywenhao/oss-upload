@@ -1,7 +1,7 @@
 {
   "name": "@bmjs/oss-upload",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "阿里云oss、腾讯云cos、华为云obs、七牛云 对象存储上传工具",
   "author": "ywenhao",
   "license": "MIT",
