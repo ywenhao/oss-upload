@@ -16,17 +16,16 @@
   ],
   "sideEffects": false,
   "exports": {
-    "./vite/*": {
+    "./*": {
       "import": {
-        "types": "./dist/vite/*.mts",
-        "default": "./dist/vite/*.mjs"
+        "types": "./dist/*.mts",
+        "default": "./dist/*.mjs"
       },
       "require": {
-        "types": "./dist/vite/*.cts",
-        "default": "./dist/vite/*.cjs"
+        "types": "./dist/*.cts",
+        "default": "./dist/*.cjs"
       }
-    },
-    "./*": "./*"
+    }
   },
   "bin": {
     "oss-upload": "./dist/upload/cli.mjs"

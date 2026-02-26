@@ -1,9 +1,5 @@
 # 这是一个 对象存储上传工具
 
-# 环境
-
-vite
-
 # 目前支持的对象存储
 
 - 华为云 obs
@@ -30,7 +26,7 @@ cli命令上传
 // upload.config.ts
 
 // 华为云obs
-import { defineConfig } from '@bmjs/obs-utils/vite/obs'
+import { defineConfig } from '@bmjs/obs-utils/obs'
 
 export default defineConfig({
   url: 'https://obs.cn-north-4.myhuaweicloud.com',
@@ -45,7 +41,7 @@ export default defineConfig({
 
 
 // 阿里云oss
-import { defineConfig } from '@bmjs/obs-utils/vite/oss'
+import { defineConfig } from '@bmjs/obs-utils/oss'
 
 export default defineConfig({
   region: 'oss-<region-id>',
@@ -59,7 +55,7 @@ export default defineConfig({
 })
 
 // 腾讯云cos
-import { defineConfig } from '@bmjs/obs-utils/vite/cos'
+import { defineConfig } from '@bmjs/obs-utils/cos'
 
 export default defineConfig({
   bucket: 'xxx',
@@ -74,7 +70,7 @@ export default defineConfig({
 
 
 // 七牛云
-import { defineConfig } from '@bmjs/obs-utils/vite/oss'
+import { defineConfig } from '@bmjs/obs-utils/oss'
 
 export default defineConfig({
   bucket: 'xxx',
