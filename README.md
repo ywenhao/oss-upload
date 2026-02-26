@@ -26,7 +26,7 @@ cli命令上传
 // upload.config.ts
 
 // 华为云obs
-import { defineConfig } from '@bmjs/obs-utils/obs'
+import { defineConfig } from '@bmjs/oss-upload/obs'
 
 export default defineConfig({
   url: 'https://obs.cn-north-4.myhuaweicloud.com',
@@ -41,7 +41,7 @@ export default defineConfig({
 
 
 // 阿里云oss
-import { defineConfig } from '@bmjs/obs-utils/oss'
+import { defineConfig } from '@bmjs/oss-upload/oss'
 
 export default defineConfig({
   region: 'oss-<region-id>',
@@ -55,7 +55,7 @@ export default defineConfig({
 })
 
 // 腾讯云cos
-import { defineConfig } from '@bmjs/obs-utils/cos'
+import { defineConfig } from '@bmjs/oss-upload/cos'
 
 export default defineConfig({
   bucket: 'xxx',
@@ -70,7 +70,7 @@ export default defineConfig({
 
 
 // 七牛云
-import { defineConfig } from '@bmjs/obs-utils/oss'
+import { defineConfig } from '@bmjs/oss-upload/oss'
 
 export default defineConfig({
   bucket: 'xxx',
