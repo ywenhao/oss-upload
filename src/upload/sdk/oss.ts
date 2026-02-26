@@ -65,7 +65,7 @@ async function upload({
     )
   }
   catch (error: any) {
-    consola.error(`upload to oss failed, fileKey: ${fileKey}, filePath: ${filePath}`)
+    consola.error(`upload failed, fileKey: ${fileKey}, filePath: ${filePath}`)
     consola.error(error)
     throw new Error('上传失败')
   }

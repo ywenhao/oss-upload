@@ -74,7 +74,7 @@ async function upload({
     }
   }
   catch (e) {
-    consola.error(`upload to qiniu failed, fileKey: ${fileKey}, filePath: ${filePath}`)
+    consola.error(`upload failed, fileKey: ${fileKey}, filePath: ${filePath}`)
     consola.error(e)
     throw new Error('上传失败')
   }
