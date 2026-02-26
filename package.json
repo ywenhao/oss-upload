@@ -1,7 +1,7 @@
 {
   "name": "@bmjs/oss-upload",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "oss upload",
   "author": "ywenhao",
   "license": "MIT",
