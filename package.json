@@ -40,9 +40,6 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "peerDependencies": {
-    "vite": ">=5.0.0"
-  },
   "dependencies": {
     "ali-oss": "^6.23.0",
     "ansis": "^4.2.0",
