@@ -39,7 +39,7 @@ function getPathsByArgv() {
   }
 }
 
-export async function main() {
+async function main() {
   const { client, config } = await createConfig()
   const paths = getPathsByArgv()
   const entry = paths || config.entry
