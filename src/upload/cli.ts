@@ -5,15 +5,16 @@ import { consola } from 'consola'
 // eslint-disable-next-line ts/ban-ts-comment
 // @ts-ignore
 import fg from 'fast-glob'
+import { cos } from './sdk/cos'
 import { obs } from './sdk/obs'
 import { oss } from './sdk/oss'
 import { qiniu } from './sdk/qiniu'
 import { configLoader } from './utils/config'
 import { promisePool } from './utils/promisePool'
 
-const sdkMap = { obs, oss, qiniu }
+const sdkMap = { obs, oss, qiniu, cos }
 
-let sdk: typeof obs | typeof oss | typeof qiniu
+let sdk: typeof obs | typeof oss | typeof qiniu | typeof cos
 
 export async function createConfig() {
   const loader = await configLoader.load()

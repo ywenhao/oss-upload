@@ -32,11 +32,21 @@ export interface ObsUploadConfig extends EntryConfig {
  * 七牛云
  */
 export interface QiNiuUploadConfig extends EntryConfig {
+  bucket: string
   accessKey: string
   secretKey: string
-  bucket: string
   /**
    * 区域
    */
   regionsProvider?: qiniu$.httpc.RegionsProvider
+}
+
+/**
+ * 腾讯云cos
+ */
+export interface CosUploadConfig extends EntryConfig {
+  bucket: string
+  region: string
+  secretId: string
+  secretKey: string
 }

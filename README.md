@@ -8,6 +8,7 @@ vite
 
 - 华为云 obs
 - 阿里云 oss
+- 腾讯云 cos
 - 七牛云
 
 
@@ -51,6 +52,20 @@ export default defineConfig({
   bucket: 'xxx',
   accessKeyId: 'admin',
   accessKeySecret: 'admin',
+  // { 本地要上传的文件路径 : obs 上的文件路径 }
+  entry: {
+    './dist/build/h5': 'h5',
+  },
+})
+
+// 腾讯云cos
+import { defineConfig } from '@bmjs/obs-utils/vite/cos'
+
+export default defineConfig({
+  bucket: 'xxx',
+  region: 'COS_REGION', // 存储桶所在地域，例如 ap-beijing，必须字段
+  secretId: 'admin',
+  secretKey: 'admin',
   // { 本地要上传的文件路径 : obs 上的文件路径 }
   entry: {
     './dist/build/h5': 'h5',
