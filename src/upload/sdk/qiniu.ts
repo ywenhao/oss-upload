@@ -14,13 +14,6 @@ function checkConfig(config: QiNiuUploadConfig) {
 }
 
 function createClient(_config: QiNiuUploadConfig) {
-  // return new OSS({
-  //   bucket: config.bucket,
-  //   accessKeyId: config.accessKeyId,
-  //   accessKeySecret: config.accessKeySecret,
-  //   authorizationV4: true,
-  // })
-
   return qiniu$
 }
 
