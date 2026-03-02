@@ -70,7 +70,7 @@ export default defineConfig({
 
 
 // 七牛云
-import { defineConfig } from '@bmjs/oss-upload/oss'
+import { defineConfig } from '@bmjs/oss-upload/qiniu'
 
 export default defineConfig({
   bucket: 'xxx',
@@ -83,4 +83,4 @@ export default defineConfig({
   // 区域， 可选
   zonesProvider: qiniu.zone.Zone_z0,
 })
-```
+```qiniu
